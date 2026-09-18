@@ -1,0 +1,12 @@
+variable "name_prefix" { type = string }
+variable "vpc_id" { type = string }
+variable "public_subnet_ids" { type = list(string) }
+variable "security_group_ids" { type = list(string) }
+variable "app_port" { type = number }
+variable "health_check_path" { type = string }
+variable "acm_certificate_arn" { type = string }
+variable "route53_zone_id" { type = string }
+variable "domain_name" { type = string }
+variable "deletion_protection" { type = bool }
+variable "account_id" { type = string }
+variable "is_prod" { type = bool }

@@ -1,0 +1,14 @@
+variable "name_prefix" { type = string }
+variable "subnet_ids" { type = list(string) }
+variable "security_group_ids" { type = list(string) }
+variable "engine_version" { type = string }
+variable "instance_class" { type = string }
+variable "allocated_storage" { type = number }
+variable "max_allocated_storage" { type = number }
+variable "multi_az" { type = bool }
+variable "backup_retention_days" { type = number }
+variable "deletion_protection" { type = bool }
+variable "db_name" { type = string }
+variable "db_username" { type = string }
+variable "rails_max_threads" { type = number }
+variable "is_prod" { type = bool }
